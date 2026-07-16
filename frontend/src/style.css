@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: 13 17 23;
+    --color-surface: 26 29 43;
+    --color-surface-hover: 36 40 56;
+    --color-border: 48 54 72;
+    --color-text: 226 230 240;
+    --color-text-secondary: 154 168 196;
+    --color-brand: 92 124 250;
+    --color-brand-hover: 76 110 245;
+  }
+
+  html {
+    @apply bg-[#0d1117] text-surface-100 antialiased;
+    overflow: hidden;
+  }
+
+  body {
+    @apply m-0 font-sans;
+  }
+
+  #app {
+    @apply h-screen w-screen overflow-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-700/50 rounded-full hover:bg-surface-600/50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface-950/80 backdrop-blur-sm border border-surface-800/50 rounded-2xl transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:bg-surface-950 hover:border-surface-700/50 hover:shadow-lg hover:shadow-black/20;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 hover:bg-brand-500 text-white font-medium px-4 py-2 rounded-xl transition-all duration-200 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply text-surface-400 hover:text-surface-100 hover:bg-surface-800/50 font-medium px-3 py-2 rounded-xl transition-all duration-200;
+  }
+
+  .input {
+    @apply bg-surface-950 border border-surface-700/50 text-surface-100 placeholder-surface-500 rounded-xl px-4 py-2.5 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/20 transition-all duration-200;
+  }
+}
