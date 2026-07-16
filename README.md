@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="frontend/src/assets/images/logo-main-Photoroom.png" alt="AniDesk" width="128" />
+  <img src="frontend/src/assets/images/logo-main-Photoroom.png" alt="AniDesk" width="228" height="228"/>
   <h1>AniDesk</h1>
   <p><strong>A lightweight, native desktop client for MyAnimeList</strong></p>
   <p>
