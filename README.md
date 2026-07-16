@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="frontend/src/assets/images/logo-universal.png" alt="AniDesk" width="128" />
+  <img src="frontend/src/assets/images/logo-main.png" alt="AniDesk" width="128" />
   <h1>AniDesk</h1>
   <p><strong>A lightweight, native desktop client for MyAnimeList</strong></p>
   <p>
